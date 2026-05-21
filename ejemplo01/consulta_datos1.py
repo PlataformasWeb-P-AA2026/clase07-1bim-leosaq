@@ -38,8 +38,8 @@ jugadores = session.query(Jugador).all()
 
 print("Jugadores")
 for s in jugadores:
-    print("Mi jugador es (%s), su club fue fundado en (%d)" % (s.nombre, 
-                                                               s.club.fundacion))
+    print("Mi jugador es (%s), su club fue fundado en (%d), nombre del club (%s)" % (s.nombre, 
+                                                               s.club.fundacion, s.club.nombre))
     print("---------")
 
 

@@ -33,8 +33,8 @@ print("Consulta 1 ")
 Consulta 1 
 Club: nombre=Barcelona deporte=Fútbol fundación=1920
 """
-# for e in clubs: 
-#    print(e) 
+for e in clubs: 
+   print(e) 
 
 # Obtener un listado de todos los registros 
 # de la tabla Club y Jugador, que tengan al menos 
