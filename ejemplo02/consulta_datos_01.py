@@ -29,13 +29,16 @@ session = Session()
 #modulos = session.query(Modulo).all()
 #print(modulos)
 
-print("--------------------------------------")
+#print("--------------------------------------")
 # Obtener todos los registros de la clase Matricula
 matriculas = session.query(Matricula).all()
 for m in matriculas:
-    print(m, m.estudiante, m.modulo)
-    print(m.estudiante.nombre, m.estudiante.apellido)
-print("--------------------------------------")
+    print(m.estudiante, m.modulo, m.periodo)
+    
+    
 # nombre y apellido del estudiante de cada matrícula
+print("--------------------------------------")
+matriculas = session.query(Matricula).all()
 
-# print(matriculas)
+for m in matriculas:
+    print(m.estudiante.nombre, m.estudiante.apellido)
